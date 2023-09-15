@@ -1,0 +1,68 @@
+.root {
+  background-color: var(--white);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  z-index: 3;
+  position: relative;
+  text-align: left;
+}
+
+.textBlock {
+  width: 68%;
+  position: relative;
+}
+
+.textBody {
+  color: var(--dark-black);
+  font-size: 0.8rem;
+  font-weight: 400;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contentBlock {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+}
+
+.content {
+  position: relative;
+}
+
+.image {
+  width: 59%;
+  margin-left: -8rem;
+  z-index: 1;
+}
+
+.whiteBlock {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  right: -35%;
+  z-index: 2;
+  background: linear-gradient(90deg, #FFF 22.44%, rgba(255, 255, 255, 0.63) 61.92%, rgba(255, 255, 255, 0.34) 75.06%, rgba(255, 255, 255, 0.00) 87.76%);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+@media screen and (max-width: 992px) {
+  .root {
+    padding: 1.6rem;
+  }
+}

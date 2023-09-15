@@ -1,0 +1,65 @@
+.root {
+  width: 45%;
+  padding: 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 0.4rem;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.img {
+  border-radius: 0.4rem;
+}
+
+.title {
+  color: var(--dark-black);
+  flex-grow: 1;
+}
+
+.body {
+  color: var(--dark-black);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.link {
+  width: 100%;
+  padding: 0.3rem;
+  text-align: center;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 992px) {
+  .root {
+    padding: 0.7rem;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .link {
+    padding: 0.2rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .link {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,45 @@
+.root {
+  //background-image: url("../../shared/icons/faqLine1.svg");
+  //background-position: 0 -30rem;
+  //background-size: contain;
+  //background-repeat: no-repeat;
+  //z-index: 3;
+  //overflow: visible;
+  position: relative;
+  //overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  z-index: -1;
+}
+
+.line1 {
+  top: -15rem;
+}
+
+.line2 {
+
+}
+
+.line3 {
+  top: 15rem;
+}
+
+.line4 {
+  top: 40rem;
+}
+
+.line5 {
+  top: 60rem;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+}

@@ -1,0 +1,63 @@
+
+.title {
+  margin-bottom: 0.7rem;
+}
+
+.subtitle {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3.8rem;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3.7rem;
+}
+
+.cv {
+  border-radius: 0.4rem;
+  background: var(--white);
+  padding: 2rem;
+  margin: 0 auto;
+
+  &Title {
+    margin-bottom: 1.2rem;
+  }
+
+  &Inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &InputItem {
+    width: 38%;
+    font-size: 0.8rem;
+
+    &::placeholder {
+      font-size: 0.8rem;
+    }
+  }
+
+  &Button {
+    width: 38%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cv {
+    max-width: min(80%, 900px);
+
+    &Inputs {
+      gap: 1.5rem;
+    }
+  }
+}

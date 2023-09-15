@@ -1,0 +1,89 @@
+.root {
+  margin-bottom: 4rem;
+}
+
+.imageContainer {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.lineTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.lineBottom {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.teamImage {
+  position: relative;
+  max-width: unset;
+  width: 120%;
+  margin-left: -4rem;
+}
+
+.cloudsContainer {
+  padding: 0 6rem 0 7rem;
+  margin-top: -3rem;
+}
+
+.cloudFirstContainer {
+  position: relative;
+  width: 19.1rem;
+  padding: 2.5rem 2.5rem 0 3.8rem;
+}
+
+.cloudFirstImage {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.cloudList {
+  position: relative;
+  z-index: 1;
+  color: var(--dark-black);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cloudFirstList {
+  padding-left: 0.1rem;
+}
+
+.cloudSecondContainer {
+  width: 18rem;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  padding: 4.3rem 3rem;
+}
+
+.cloudSecondImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.cloudSecondList {
+  text-align: right;
+}

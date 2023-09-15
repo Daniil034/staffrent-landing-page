@@ -1,0 +1,65 @@
+.root {
+  margin-bottom: 4.2rem;
+}
+
+.imageBlock {
+  //overflow: hidden;
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  border-radius: 1.2rem;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(269deg, #CB0B0B 2.74%, rgba(203, 11, 11, 0.00) 69.43%);
+}
+
+.imageDescription {
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.top {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+  color: var(--white);
+  text-align: right;
+}
+
+.imageParagraph {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 1.2rem;
+}
+
+.description {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  .imageDescription {
+    width: 75%;
+    margin-right: -1rem;
+  }
+}

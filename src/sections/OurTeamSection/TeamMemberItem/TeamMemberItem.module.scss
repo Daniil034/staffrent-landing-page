@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 7.5rem;
+  //height: 7.5rem;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.position {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}

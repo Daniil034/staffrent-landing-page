@@ -1,0 +1,22 @@
+.root {
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 1.7rem;
+  margin-bottom: 2.6rem;
+}
+
+.serviceBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

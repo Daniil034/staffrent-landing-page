@@ -1,0 +1,29 @@
+.root {
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleLeft {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.titleRight {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.body {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.image {
+  width: 14rem;
+}

@@ -1,0 +1,42 @@
+.root {
+
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 1.8rem;
+}
+
+.meetTeam {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.teamContainer {
+  position: relative;
+}
+
+.teamList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.backgroundLine {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}

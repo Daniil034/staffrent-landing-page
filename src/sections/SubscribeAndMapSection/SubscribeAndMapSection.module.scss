@@ -1,0 +1,33 @@
+.root {
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.inputBlock {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  flex: 1 1 0;
+}
+
+.button {
+  padding: 0.8rem 2.7rem;
+  width: fit-content;
+  color: var(--dark-black);
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  flex: 0 0 0;
+}
+
+.mapContainer {
+  height: 21.5rem;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+.list {
+  margin-top: 1rem;
+  list-style-position: inside;
+
+  &Item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

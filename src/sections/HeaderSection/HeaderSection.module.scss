@@ -1,0 +1,125 @@
+.root {
+  padding: 2.3rem 0;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuButton {
+  position: relative;
+}
+
+.menuButton,
+.menuButton::before,
+.menuButton::after {
+  display: block;
+  background-color: var(--dark-black);
+  height: 0.4rem;
+  width: 3rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 0.2rem;
+}
+
+.menuButton::before {
+  position: absolute;
+  content: '';
+  margin-top: -0.8rem;
+}
+
+.menuButton::after {
+  position: absolute;
+  content: '';
+  margin-top: 0.8rem;
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton {
+  background: rgba(255, 255, 255, 0);
+}
+
+.menuToggle:checked + .menuButtonContainer .menuButton::after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+
+.menu {
+  background-color: var(--white);
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  transform: translateX(-100%);
+  left: 0;
+  top: 6.2rem;
+  height: 100%;
+  z-index: 5;
+}
+
+.link {
+  color: var(--dark-black);
+}
+
+.linkActive {
+  color: var(--red);
+}
+
+.menuToggle ~ .menu {
+  transition: all 400ms ease-in-out;
+}
+
+.menuToggle:checked ~ .menu {
+  transform: translateX(0);
+  transition: all 400ms ease-in-out;
+}
+
+
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-grow: 1;
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0.5rem 0 0 0;
+    gap: 1rem;
+    width: 100%;
+    font-weight: 500;
+    transform: translateX(0);
+    font-size: 0.6rem;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 5;
+    //align-items: center;
+  }
+
+  .menuButton,
+  .menuButton::before,
+  .menuButton::after {
+    display: none;
+  }
+}
