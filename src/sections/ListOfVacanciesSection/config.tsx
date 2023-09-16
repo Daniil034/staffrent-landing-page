@@ -5,7 +5,7 @@ import solarTechnicianImg from 'shared/images/solarTechnicianImage.png'
 
 export const VACANCY_LIST: VacancyItemProps[] = [
     {
-        title: 'FITTER - ERECTOR FOR PRODUCTION WAREHOUSE',
+        title: 'Fitter - Erector For Production Warehouse',
         imageSrc: locksmithImg,
         imagePosition: 'right',
         imageMarginRight: -6,
@@ -48,7 +48,7 @@ export const VACANCY_LIST: VacancyItemProps[] = [
         ]
     },
     {
-        title: 'TECHNICIAN / HYDRAULICS SPECIALIST',
+        title: 'Technician / Hydraulics specialist',
         imageSrc: technicianImg,
         imagePosition: 'left',
         imageMarginLeft: -7,
@@ -90,7 +90,7 @@ export const VACANCY_LIST: VacancyItemProps[] = [
         ]
     },
     {
-        title: 'SOLAR PANELS TECHNICIAN',
+        title: 'Solar panels technician',
         imageSrc: solarTechnicianImg,
         imageMarginRight: -8,
         imageMarginLeft: -6,

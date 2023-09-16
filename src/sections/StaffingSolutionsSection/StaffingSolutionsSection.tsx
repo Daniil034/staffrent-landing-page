@@ -13,6 +13,7 @@ export function StaffingSolutionsSection() {
                 <div className={styles.list}>
                     {SOLUTION_LIST.map(solution => (
                         <SolutionItem
+                            key={solution.title}
                             title={solution.title}
                             body={solution.body}
                             backgroundImgSrc={solution.backgroundImgSrc}

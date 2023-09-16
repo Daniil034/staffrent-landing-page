@@ -19,6 +19,7 @@ export function OurTeamSection() {
                     <div className={styles.teamList}>
                         {TEAM_LIST.map(member => (
                             <TeamMemberItem
+                                key={member.name}
                                 imageSrc={member.imageSrc}
                                 name={member.name}
                                 position={member.position}

@@ -52,12 +52,33 @@
   }
 }
 
+.select {
+  padding: 0.5rem 0.8rem;
+  background-color: transparent;
+  border-radius: 0.3rem;
+  min-width: unset;
+  display: block;
+  font-size: 0.8rem;
+  border: 0.1rem solid var(--red);
+  color: var(--red);
+  outline: none;
+
+  &::placeholder {
+    color: var(--red);
+    opacity: 0.8;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .cv {
     max-width: min(80%, 900px);
 
+    &InputItem {
+      width: 9rem;
+    }
+
     &Inputs {
-      gap: 1.5rem;
+      gap: 1.2rem;
     }
   }
 }

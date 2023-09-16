@@ -14,6 +14,10 @@
   margin-bottom: 0.5rem;
 }
 
+.image {
+  width: 100%;
+}
+
 .imageContainerTopGradient {
   position: absolute;
   top: -4.5rem;
@@ -39,4 +43,11 @@
   font-weight: 500;
 }
 
+@media screen and (min-width: 992px) {
+  .paragraphContainer {
+    margin-top: -3rem;
+    position: relative;
+    z-index: 3;
+  }
+}
 

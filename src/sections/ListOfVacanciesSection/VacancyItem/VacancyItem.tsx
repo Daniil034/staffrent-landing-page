@@ -41,7 +41,7 @@ export function VacancyItem(props: VacancyItemProps) {
                         <Title className={styles.title} color="red">{title}</Title>
                         <ul className={styles.list}>
                             {bulletPoints.map(point => (
-                                <li className={styles.listItem}>
+                                <li className={styles.listItem} key={point.bulletPointTitle}>
                                     <h4 className={styles.listItemTitle}>{point.bulletPointTitle}</h4>
                                     <p className={styles.listItemBody}>{point.bulletPointBody}</p>
                                 </li>
@@ -60,7 +60,7 @@ export function VacancyItem(props: VacancyItemProps) {
                         <Title className={styles.title} color="red">{title}</Title>
                         <ul className={styles.list}>
                             {bulletPoints.map(point => (
-                                <li className={styles.listItem}>
+                                <li className={styles.listItem} key={point.bulletPointTitle}>
                                     <h4 className={styles.listItemTitle}>{point.bulletPointTitle}</h4>
                                     <p className={styles.listItemBody}>{point.bulletPointBody}</p>
                                 </li>

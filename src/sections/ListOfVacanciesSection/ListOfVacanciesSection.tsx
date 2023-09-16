@@ -3,45 +3,42 @@ import {Title} from "../../shared/ui/Title/Title";
 import {VACANCY_LIST} from "./config";
 import {VacancyItem} from "./VacancyItem/VacancyItem";
 import {Container} from "../../shared/ui/Container/Container";
-import {ChangeEvent, useReducer} from "react";
+import {ChangeEvent, FormEvent, useReducer} from "react";
 import {Input} from "../../shared/ui/Input/Input";
 import {Button} from "../../shared/ui/Button/Button";
+import classNames from "classnames";
+import {defaultFormSelectorValue, formReducer, FormState, initialFormState, InputFields} from "./reducer";
 
-type FormData = {
-    name: string,
-    phone: string,
-    surname: string,
-    email: string,
-    vacancyList: string,
-    linkToJob: string,
-}
+const options = [defaultFormSelectorValue].concat(VACANCY_LIST.map(vacancy => ({
+    label: vacancy.title,
+    value: vacancy.title
+})));
 
-const initialFormState: FormData = {
-    name: '',
-    phone: '',
-    surname: '',
-    email: '',
-    vacancyList: '',
-    linkToJob: ''
-}
 
 export function ListOfVacanciesSection() {
-    const [formData, setFormData] = useReducer(
-        (prevState: FormData, newState: Partial<FormData>) => ({...prevState, ...newState}),
-        initialFormState
-    );
+    const [formData, setFormData] = useReducer(formReducer, initialFormState);
 
-    const handleInput = (field: keyof FormData) => (e: ChangeEvent<HTMLInputElement>) => {
-        setFormData({[field]: e.target.value})
+    const handleInputChange = (field: InputFields) => (e: ChangeEvent<HTMLInputElement>) => {
+        setFormData({type: 'changeInput', payload: {field, value: e.target.value}})
     }
 
-    const placeholders: Record<keyof FormData, string> = {
+    const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        const option = options.find(option => option.value === e.target.value);
+        if (!option) return;
+        setFormData({type: 'changeSelect', payload: option})
+    }
+
+    const placeholders: Record<keyof FormState, string> = {
         name: 'Name',
         phone: 'Phone',
         surname: 'Surname',
         email: 'Email',
-        vacancyList: 'Vacancy list',
+        vacancy: 'Vacancy list',
         linkToJob: 'Link to a job resume'
+    }
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
     }
 
     return (
@@ -64,18 +61,43 @@ export function ListOfVacanciesSection() {
                 </ul>
                 <div className={styles.cv}>
                     <Title className={styles.cvTitle} color="dark">Send your cv</Title>
-                    <div className={styles.cvInputs}>
-                        {Object.entries(formData).map(([field, value]) => (
-                            <Input
-                                color="red"
-                                className={styles.cvInputItem}
-                                value={value}
-                                onChange={handleInput(field as keyof FormData)}
-                                placeholder={placeholders[field as keyof FormData]}
-                            />
-                        ))}
-                    </div>
-                    <Button color="red" padding="big" className={styles.cvButton}>Send</Button>
+                    <form onSubmit={handleSubmit}>
+                        <div className={styles.cvInputs}>
+                            {Object.entries(formData).map(([field, value]) => {
+                                if (typeof value !== 'string') {
+                                    return (
+                                        <select name={field} required
+                                                className={classNames(styles.cvInputItem, styles.select)} key={field}
+                                                value={formData.vacancy.value}
+                                                onChange={handleSelectChange}
+                                        >
+                                            {options.map(option => (
+                                                <option
+                                                    key={option.value}
+                                                    value={option.value}
+                                                >
+                                                    {option.label}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    )
+                                } else {
+                                    return (
+                                        <Input
+                                            required
+                                            key={field}
+                                            color="red"
+                                            className={styles.cvInputItem}
+                                            value={value}
+                                            onChange={handleInputChange(field as InputFields)}
+                                            placeholder={placeholders[field as keyof FormState]}
+                                        />
+                                    )
+                                }
+                            })}
+                        </div>
+                        <Button color="red" padding="big" className={styles.cvButton} type="submit">Send</Button>
+                    </form>
                 </div>
             </Container>
         </section>

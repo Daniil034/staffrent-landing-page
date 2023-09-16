@@ -21,6 +21,7 @@ export function FaqListSection() {
                 <ul className={styles.list}>
                     {FAQ_LIST.map(faq => (
                         <FaqListItem
+                            key={faq.title}
                             title={faq.title}
                             body={faq.body}
                             imageSrc={faq.imageSrc}

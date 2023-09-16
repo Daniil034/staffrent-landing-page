@@ -12,7 +12,7 @@ export function BestInIndustrySection() {
                 <img className={styles.image} src={shakingHandsImage} alt="People shaking hands"/>
                 <div className={styles.imageContainerBottomGradient}/>
             </div>
-            <Container>
+            <Container className={styles.paragraphContainer}>
                 <p className={styles.paragraph}>
                     «STAFFRENT» differs from other agencies in its wide range of services for both employers and job
                     seekers.
