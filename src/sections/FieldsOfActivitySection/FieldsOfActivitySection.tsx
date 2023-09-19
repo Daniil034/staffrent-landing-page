@@ -10,14 +10,14 @@ export function FieldsOfActivitySection() {
             <Container className={styles.container}>
                 <Title className={styles.title}>Main fields of activity</Title>
                 <div className={styles.activities}>
-                    {ACTIVITY_LIST.map(activity => (
+                    {ACTIVITY_LIST.map((activity, index) => (
                         <ActivityBlock
                             key={activity.title}
                             imgSrc={activity.imgSrc}
                             imgAlt={activity.imgAlt}
                             title={activity.title}
                             money={activity.money}
-                            infoHref={activity.infoHref}
+                            index={index}
                         />
                     ))}
                 </div>

@@ -1,16 +1,17 @@
 import {Title} from "../../../shared/ui/Title/Title";
 import styles from './ActivityBlock.module.scss';
+import {Link} from "react-router-dom";
 
 export type ActivityBlockProps = {
     imgSrc: string,
     imgAlt: string,
     title: string,
     money: string,
-    infoHref: string,
+    index: number,
 };
 
 export function ActivityBlock(props: ActivityBlockProps) {
-    const {imgSrc, imgAlt, title, money, infoHref} = props;
+    const {imgSrc, imgAlt, title, money, index} = props;
 
     return (
         <div className={styles.root}>
@@ -26,7 +27,7 @@ export function ActivityBlock(props: ActivityBlockProps) {
                 </p>
             </div>
             <div className={styles.container}>
-                <a className={styles.link} href={infoHref} target="_blank" rel="noreferrer">More info</a>
+                <Link className={styles.link} to={`/activity/${index}`} rel="noreferrer">More info</Link>
             </div>
 
         </div>
