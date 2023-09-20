@@ -4,6 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Router} from "./pages";
 import {HeaderSection} from "./sections/HeaderSection/HeaderSection";
 import {FooterSection} from "./sections/FooterSection/FooterSection";
+import {ScrollToTop} from "./shared/ui/ScrollToTop/ScrollToTop";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 </div>
                 <FooterSection/>
             </div>
+            <ScrollToTop/>
         </BrowserRouter>
     );
 }

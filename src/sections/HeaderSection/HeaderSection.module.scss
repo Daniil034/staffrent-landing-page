@@ -76,7 +76,7 @@
   font-weight: 500;
   transform: translateX(-100%);
   left: 0;
-  top: 6.2rem;
+  top: 4.6rem;
   height: 100%;
   z-index: 5;
 }
@@ -121,5 +121,11 @@
   .menuButton::before,
   .menuButton::after {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .root {
+    padding: 1.5rem 0;
   }
 }
