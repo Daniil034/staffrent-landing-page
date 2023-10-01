@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   height: 14rem;
-  background: linear-gradient(180deg, #CB0B0B 51.06%, rgba(203, 11, 11, 0.58) 68.23%, rgba(203, 11, 11, 0.00) 93.97%);
+  background: linear-gradient(180deg, var(--red) 51.06%, rgba(203, 11, 11, 0.58) 68.23%, rgba(203, 11, 11, 0.00) 93.97%);
 }
 
 .imageContainerBottomGradient {
@@ -33,7 +33,7 @@
   right: 0;
   bottom: -10rem;
   height: 20rem;
-  background: linear-gradient(0deg, #CB0B0B 47.64%, rgba(203, 11, 11, 0.58) 63.26%, rgba(203, 11, 11, 0.00) 93.95%);
+  background: linear-gradient(0deg, var(--red) 47.64%, rgba(203, 11, 11, 0.58) 63.26%, rgba(203, 11, 11, 0.00) 93.95%);
 }
 
 .paragraph {

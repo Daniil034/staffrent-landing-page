@@ -5,7 +5,7 @@
 .imageBlock {
   //overflow: hidden;
   position: relative;
-  margin-bottom: 1.6rem;
+  margin-bottom: -3rem;
 }
 
 .imageContainer {
@@ -22,7 +22,7 @@
   right: 0;
   height: 100%;
   top: 0;
-  background: linear-gradient(269deg, #CB0B0B 2.74%, rgba(203, 11, 11, 0.00) 69.43%);
+  background: linear-gradient(269deg, var(--red) 2.74%, rgba(203, 11, 11, 0.00) 69.43%);
 }
 
 .imageDescription {
@@ -54,6 +54,7 @@
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
+  margin-top: 5rem;
 }
 
 

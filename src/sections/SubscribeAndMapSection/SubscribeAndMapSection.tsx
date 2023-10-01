@@ -4,20 +4,25 @@ import {Input} from "../../shared/ui/Input/Input";
 import {Button} from "../../shared/ui/Button/Button";
 import {Container} from "../../shared/ui/Container/Container";
 import {GoogleMap, Marker, useLoadScript} from "@react-google-maps/api";
-import {useMemo} from "react";
+import {useMemo, useState} from "react";
 import {GoogleMapBlock} from "../../shared/ui/GoogleMapBlock/GoogleMapBlock";
+import sendForm from "../../api";
 
 
 export function SubscribeAndMapSection() {
-
-
+    const [email, setEmail] = useState("");
     return (
         <section className={styles.root}>
             <Container>
                 <Title className={styles.title}>Subscribe form</Title>
                 <div className={styles.inputBlock}>
-                    <Input className={styles.input} placeholder="emailexample@mail.com"/>
-                    <Button color="white" className={styles.button}>Join</Button>
+                    <Input value={email} onChange={event => setEmail(event.target.value)} className={styles.input}
+                           placeholder="emailexample@mail.com"/>
+                    <Button color="white" className={styles.button} onClick={() => {
+                        sendForm('SUBSCRIBE', {email: email}).then(()=>{
+                            setEmail('');
+                        });
+                    }}>Join</Button>
                 </div>
                 <div className={styles.mapContainer}>
                     <GoogleMapBlock/>

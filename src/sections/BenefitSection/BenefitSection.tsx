@@ -7,13 +7,21 @@ import {ReactComponent as CloudSecond} from "shared/images/cloudSecond.svg"
 import teamImage from 'shared/images/teamImage.png';
 import styles from './BenefitSection.module.scss';
 import classNames from "classnames";
+import {
+    en_fifth_cloud,
+    en_first_cloud,
+    en_fourth_cloud,
+    en_second_cloud,
+    en_third_cloud,
+    en_title
+} from "../../content/en/MainPage/BenefitSectionContent";
 
 
 export function BenefitSection() {
     return (
         <section className={styles.root}>
             <Container>
-                <Title>How will you benefit from staff outsourcing?</Title>
+                <Title>{en_title}</Title>
             </Container>
             <div className={styles.imageContainer}>
                 <BenefitSectionTopLine className={styles.lineTop}/>
@@ -24,23 +32,23 @@ export function BenefitSection() {
                 <div className={styles.cloudFirstContainer}>
                     <CouldFirst className={styles.cloudFirstImage}/>
                     <ul className={classNames(styles.cloudList, styles.cloudFirstList)}>
-                        <li>Staff outsourcing enables the hiring of the necessary staff for temporary or permanent work,
-                            transferring the business process to our services
+                        <li>
+                            {en_first_cloud}
                         </li>
-                        <li>Outsourcing allows you to obtain better results with no need for your own recruitment
-                            division.
+                        <li>
+                            {en_second_cloud}
                         </li>
-                        
+
                     </ul>
                 </div>
                 <div className={styles.cloudSecondContainer}>
                     <CloudSecond className={styles.cloudSecondImage}/>
                     <ul className={classNames(styles.cloudList, styles.cloudSecondList)}>
-                        <li>We will select and train the staff within a short period of time so that they can carry out
-                            the specific tasks that you have set for them.
+                        <li>
+                            {en_third_cloud}
                         </li>
-                        <li>We bear the responsibility for our staff and fulfilment of your business tasks.</li>
-                        <li>No obligations on labour relations with staff.</li>
+                        <li>{en_fourth_cloud}</li>
+                        <li>{en_fifth_cloud}</li>
                     </ul>
                 </div>
             </div>

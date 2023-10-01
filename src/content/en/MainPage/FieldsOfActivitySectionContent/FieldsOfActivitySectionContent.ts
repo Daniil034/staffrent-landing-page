@@ -1,0 +1,1 @@
+export const en_title = "Main fields of activity";

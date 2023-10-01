@@ -1,0 +1,3 @@
+export const en_top = "Forget Everything You Know About Leased Staff"
+export const en_imageParagraph = "Premium staffing solutions for immediate workforce and project needs."
+export const en_description = "\"STAFFRENT\" provides a full range of services in the field of recruitment and outstaffing of both highly qualified and line personnel, combined with an individual approach to each client. Since 2013, the STAFFRENT group of companies has helped many employees find the best employment solution and great employees for employers. We do the selection and recruitment of staff with our own offices in the Netherlands, Poland, Latvia, Lithuania, Estonia and Moldova. Collective labour agreement (CAO) applies to our staff."

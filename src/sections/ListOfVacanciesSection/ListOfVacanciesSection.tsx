@@ -3,11 +3,12 @@ import {Title} from "../../shared/ui/Title/Title";
 import {VACANCY_LIST} from "./config";
 import {VacancyItem} from "./VacancyItem/VacancyItem";
 import {Container} from "../../shared/ui/Container/Container";
-import {ChangeEvent, FormEvent, useReducer} from "react";
+import {ChangeEvent, FormEvent, useReducer, useState} from "react";
 import {Input} from "../../shared/ui/Input/Input";
 import {Button} from "../../shared/ui/Button/Button";
 import classNames from "classnames";
 import {defaultFormSelectorValue, formReducer, FormState, initialFormState, InputFields} from "./reducer";
+import sendForm from "../../api";
 
 const options = [defaultFormSelectorValue].concat(VACANCY_LIST.map(vacancy => ({
     label: vacancy.title,
@@ -33,14 +34,15 @@ export function ListOfVacanciesSection() {
         phone: 'Phone',
         surname: 'Surname',
         email: 'Email',
-        vacancy: 'Vacancy list',
-        linkToJob: 'Link to a job resume'
+    }
+    const areAllFieldsFilled = () => {
+        return Object.values(formData).every(value => value !== '');
     }
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
     }
-
+    const [sendButtonDisabled, setSendButtonDisabled] = useState(false);
     return (
         <section>
             <Container>
@@ -64,39 +66,27 @@ export function ListOfVacanciesSection() {
                     <form onSubmit={handleSubmit}>
                         <div className={styles.cvInputs}>
                             {Object.entries(formData).map(([field, value]) => {
-                                if (typeof value !== 'string') {
-                                    return (
-                                        <select name={field} required
-                                                className={classNames(styles.cvInputItem, styles.select)} key={field}
-                                                value={formData.vacancy.value}
-                                                onChange={handleSelectChange}
-                                        >
-                                            {options.map(option => (
-                                                <option
-                                                    key={option.value}
-                                                    value={option.value}
-                                                >
-                                                    {option.label}
-                                                </option>
-                                            ))}
-                                        </select>
-                                    )
-                                } else {
-                                    return (
-                                        <Input
-                                            required
-                                            key={field}
-                                            color="red"
-                                            className={styles.cvInputItem}
-                                            value={value}
-                                            onChange={handleInputChange(field as InputFields)}
-                                            placeholder={placeholders[field as keyof FormState]}
-                                        />
-                                    )
-                                }
+                                return (
+                                    <Input
+                                        required
+                                        key={field}
+                                        color="red"
+                                        className={styles.cvInputItem}
+                                        value={value.toString()}
+                                        onChange={handleInputChange(field as InputFields)}
+                                        placeholder={placeholders[field as keyof FormState]}
+                                    />
+                                )
+
                             })}
                         </div>
-                        <Button color="red" padding="big" className={styles.cvButton} type="submit">Send</Button>
+                        <Button disabled={sendButtonDisabled} color="red" padding="big" className={styles.cvButton}
+                                type="submit" onClick={() => {
+                            if (!areAllFieldsFilled()) return;
+                            sendForm("CV", formData).then(() => {
+                                setSendButtonDisabled(true);
+                            });
+                        }}>Send</Button>
                     </form>
                 </div>
             </Container>

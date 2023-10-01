@@ -5,13 +5,14 @@ import {TEAM_LIST} from "./config";
 import {TeamMemberItem} from "./TeamMemberItem/TeamMemberItem";
 import {ReactComponent as TeamMembersLine} from "shared/icons/teamMembersLine.svg";
 import classNames from "classnames";
+import {en_meet, en_title} from "../../content/en/AboutUsPage/OurTeamSectionContent";
 
 export function OurTeamSection() {
     return (
         <section>
             <Container className={classNames(styles.container, styles.top)}>
-                <Title>OUR TEAM MEMBERS</Title>
-                <p className={styles.meetTeam}>Meet our team</p>
+                <Title>{en_title}</Title>
+                <p className={styles.meetTeam}>{en_meet}</p>
             </Container>
             <div className={styles.teamContainer}>
                 <TeamMembersLine className={styles.backgroundLine}/>

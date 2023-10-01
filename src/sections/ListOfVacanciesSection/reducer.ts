@@ -3,11 +3,7 @@ export type FormState = {
     phone: string,
     surname: string,
     email: string,
-    vacancy: {
-        label: string,
-        value: string
-    },
-    linkToJob: string,
+
 }
 
 export const defaultFormSelectorValue = {
@@ -20,8 +16,6 @@ export const initialFormState: FormState = {
     phone: '',
     surname: '',
     email: '',
-    vacancy: defaultFormSelectorValue,
-    linkToJob: ''
 }
 
 export type InputFields = keyof Omit<FormState, 'vacancy'>

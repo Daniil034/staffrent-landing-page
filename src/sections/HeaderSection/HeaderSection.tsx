@@ -1,6 +1,6 @@
 import {Container} from "shared/ui/Container/Container";
 import {ReactComponent as StaffrentLogo} from "shared/icons/staffrentLogo.svg";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {LINKS} from "./links";
 import styles from './HeaderSection.module.scss';
@@ -27,7 +27,9 @@ export function HeaderSection() {
     return (
         <section className={styles.root}>
             <Container className={styles.container}>
-                <StaffrentLogo className={styles.logo}/>
+                <Link to={"/"}>
+                    <StaffrentLogo className={styles.logo}/>
+                </Link>
                 <input id="menu-toggle" className={styles.menuToggle} checked={checked}
                        type="checkbox"/>
                 <label className={styles.menuButtonContainer} htmlFor="menu-toggle" onClick={handleCheckboxChange}>

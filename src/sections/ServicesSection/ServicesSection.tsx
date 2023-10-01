@@ -3,6 +3,12 @@ import {Title} from "../../shared/ui/Title/Title";
 import styles from './ServicesSection.module.scss';
 import {SERVICE_LIST} from "./config";
 import {ServiceBlock} from "./ServiceBlock/ServiceBlock";
+import {
+    en_description_first,
+    en_description_second,
+    en_description_third,
+    en_title
+} from "../../content/en/MainPage/ServicesSectionContent/ServicesSectionContent";
 
 type Props = {};
 
@@ -10,13 +16,13 @@ export function ServicesSection(props: Props) {
     return (
         <section className={styles.root}>
             <Container>
-                <Title className={styles.title}>RECRUITMENT & OUTSOURCING SERVICES OVER EUROPE</Title>
+                <Title className={styles.title}>{en_title}</Title>
                 <p className={styles.description}>
-                    We will help you achieve goals for your business.
+                    {en_description_first}
                     <br/>
-                    Cost reduction worries you?
+                    {en_description_second}
                     <br/>
-                    Guaranteed result within shortest time!
+                    {en_description_third}
                 </p>
                 <div className={styles.serviceBlocks}>
                     {SERVICE_LIST.map(service => (

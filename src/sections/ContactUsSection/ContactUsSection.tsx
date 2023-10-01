@@ -6,6 +6,13 @@ import {ReactComponent as ContactUsBackground} from "shared/icons/contactUsBackg
 
 import styles from './ContactUsSection.module.scss';
 import classNames from "classnames";
+import {
+    en_address,
+    en_company_name,
+    en_email,
+    en_phone_number,
+    en_title
+} from "../../content/en/MainPage/ContactUsSectionContent";
 
 export function ContactUsSection() {
     return (
@@ -14,16 +21,15 @@ export function ContactUsSection() {
             <ContactUsBackground className={classNames(styles.line, styles.background)}/>
             <Container>
                 <div className={styles.content}>
-                    <Title className={styles.title}>Contact Us</Title>
-                    <p className={styles.companyName}>STAFFRENT UAB / STAFFRENT SIA</p>
+                    <Title className={styles.title}>{en_title}</Title>
+                    <p className={styles.companyName}>{en_company_name}</p>
                     <p className={styles.requisites}>
-                        KvK 91125170 / KvK 91150396
+                        {en_address}
                         <br/>
-                        Oude Trambaan 50, 2265 DA in Leidschendam
+                        {en_email}
                         <br/>
-                        info@staffrent.ee / offer@staffrent.nl
-                        <br/>
-                        +372 57856099 / + 31 97 010265013</p>
+                        {en_phone_number}
+                        </p>
                 </div>
             </Container>
             <ContactUsBottomLine className={classNames(styles.line, styles.bottomLine)}/>

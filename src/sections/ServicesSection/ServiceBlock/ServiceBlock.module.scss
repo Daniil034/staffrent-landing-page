@@ -1,6 +1,6 @@
 .root {
   width: 100%;
-  padding: 2rem 4.5rem;
+  padding: 2rem 2rem;
   border-radius: 0.4rem;
   background-color: var(--white);
   display: grid;
@@ -34,7 +34,7 @@
   font-size: 1rem;
   font-weight: 400;
   grid-area: description;
-  text-align: center;
+  text-align: justify;
 }
 
 @media screen and (min-width: 992px) {
@@ -49,7 +49,7 @@
 
   .description {
     font-size: 0.75rem;
-    text-align: left;
+    text-align: justify;
   }
 
   .title {

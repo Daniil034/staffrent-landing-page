@@ -13,7 +13,7 @@ export function Input(props: Props) {
     const {color = 'white', className, ...restProps} = props;
 
     return (
-        <input className={classNames(styles.root, {[styles.red]: color === 'red'}, className)} {...restProps}/>
+        <input required className={classNames(styles.root, {[styles.red]: color === 'red'}, className)} {...restProps}/>
     );
 }
 

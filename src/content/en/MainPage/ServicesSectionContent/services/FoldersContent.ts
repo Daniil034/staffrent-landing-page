@@ -1,0 +1,2 @@
+export const folders_title = "Cost-effectiveness";
+export const folders_description = "Save time and money. You don’t have to spend time recruiting new employees and worry about the costs arising from employees on sick leave, taxes, accommodation, transport and other related contributions.\nStaff outsourcing enables the hiring of the necessary staff for temporary or permanent work, transferring the business process to our service.\nLet you focus on the core aspects of your business, we'll do the rest for you.";

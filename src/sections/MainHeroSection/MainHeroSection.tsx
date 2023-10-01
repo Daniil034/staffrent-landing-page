@@ -3,6 +3,7 @@ import heroImage from 'shared/images/heroImage.png';
 import {HeroButton} from "./components/HeroButton/HeroButton";
 import styles from './MainHeroSection.module.scss';
 import {Title} from "../../shared/ui/Title/Title";
+import {en_description, en_imageParagraph, en_top} from "../../content/en/MainPage/MainHeroSectionContent";
 
 type Props = {};
 
@@ -17,24 +18,12 @@ export function MainHeroSection(props: Props) {
                     </div>
                     <div className={styles.imageDescription}>
                         <div className={styles.top}>
-                            <Title align="right">Forget Everything You Know About
-                                Leased
-                                Staff</Title>
-                            <p className={styles.imageParagraph}>Premium staffing solutions for immediate workforce
-                                and
-                                project needs.</p>
+                            <Title align="right">{en_top}</Title>
+                            <p className={styles.imageParagraph}>{en_imageParagraph}</p>
                         </div>
-                        <HeroButton/>
                     </div>
                 </div>
-                <p className={styles.description}>"STAFFRENT" provides a full range of services in the field of
-                    recruitment and outstaffing of both highly qualified and line personnel, combined with an individual
-                    approach to each client.
-                    Since 2013, the STAFFRENT group of companies has helped many employees find the best employment
-                    solution and great employees for employers.
-                    We do the selection and recruitment of staff with our own offices in the Netherlands, Poland,
-                    Latvia, Lithuania, Estonia and Moldova.
-                    Collective labour agreement (CAO) applies to our staff.</p>
+                <p className={styles.description}>{en_description}</p>
             </Container>
         </section>
     );
