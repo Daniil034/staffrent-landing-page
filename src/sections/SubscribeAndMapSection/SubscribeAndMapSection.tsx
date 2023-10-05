@@ -14,15 +14,15 @@ export function SubscribeAndMapSection() {
     return (
         <section className={styles.root}>
             <Container>
-                <Title className={styles.title}>Subscribe form</Title>
+                <Title className={styles.title}>Telli vorm</Title>
                 <div className={styles.inputBlock}>
                     <Input value={email} onChange={event => setEmail(event.target.value)} className={styles.input}
-                           placeholder="emailexample@mail.com"/>
+                           placeholder="email@example.com"/>
                     <Button color="white" className={styles.button} onClick={() => {
-                        sendForm('SUBSCRIBE', {email: email}).then(()=>{
+                        sendForm('SUBSCRIBE', {email: email}).then(() => {
                             setEmail('');
                         });
-                    }}>Join</Button>
+                    }}>ühinema</Button>
                 </div>
                 <div className={styles.mapContainer}>
                     <GoogleMapBlock/>

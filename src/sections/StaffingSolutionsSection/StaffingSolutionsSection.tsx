@@ -8,8 +8,8 @@ export function StaffingSolutionsSection() {
     return (
         <section>
             <Container>
-                <Title>STAFFING SOLUTIONS</Title>
-                <p className={styles.subtitle}>Find the best employees</p>
+                <Title>PERSONALI LAHENDUSED</Title>
+                <p className={styles.subtitle}>Leia parimad töötajad</p>
                 <div className={styles.list}>
                     {SOLUTION_LIST.map(solution => (
                         <SolutionItem

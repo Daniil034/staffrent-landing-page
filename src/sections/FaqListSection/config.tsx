@@ -7,26 +7,27 @@ import styles from './config.module.scss';
 
 export const FAQ_LIST: FaqListItemProps[] = [
     {
-        title: 'What are the benefits of outsourcing personnel?',
+        title: 'Millised on personali allhanke eelised?',
         body: <>
-            <p className={styles.paragraph}>Outsourcing is generally more attractive than traditional hiring. Under the
-                condition of competent
-                alignment
-                of this process, companies reduce fixed costs and solve their important personnel tasks.</p>
+            <p className={styles.paragraph}>Allhanked on üldiselt atraktiivsemad kui traditsiooniline palkamine. Selle
+                protsessi pädeva joondamise tingimustes vähendavad ettevõtted püsikulusid ja lahendavad oma olulised
+                personaliülesanded.</p>
             <ul className={styles.list}>
-                <li className={styles.listItem}>The tax burden is reduced.</li>
-                <li className={styles.listItem}>There is an opportunity to cooperate with professionals without hiring
-                    them on a permanent basis
-                    (especially
-                    when it is not economically viable).
+                <li className={styles.listItem}><span>Maksukoormus</span> väheneb.</li>
+                <li className={styles.listItem}><span>On</span> võimalus teha koostööd spetsialistidega ilma neid
+                    alaliselt palkamata
+                    (eriti kui see ei ole majanduslikult elujõuline).
                 </li>
-                <li className={styles.listItem}>The area of responsibility is clearly limited with the provision of
-                    additional guarantees .
+                <li className={styles.listItem}><span>The</span> area of responsibility is clearly limited with the
+                    provision of
+                    additional guarantees.
                 </li>
-                <li className={styles.listItem}>Optimized working time.</li>
-                <li className={styles.listItem}>Organizational issues are solved more effectively.</li>
-                <li className={styles.listItem}>In addition, outsourced employees are more motivated and better prepared
-                    than in-house staff.
+                <li className={styles.listItem}><span>Optimeeritud</span> tööaeg.</li>
+                <li className={styles.listItem}><span>Organisatsioonilised</span> küsimused lahendatakse tõhusamalt.
+                </li>
+                <li className={styles.listItem}><span>Lisaks</span> on allhanketöötajad motiveeritumad ja paremini ette
+                    valmistatud
+                    kui ettevõttesisesed töötajad.
                 </li>
             </ul>
         </>,
@@ -34,68 +35,63 @@ export const FAQ_LIST: FaqListItemProps[] = [
         imagePosition: 'left'
     },
     {
-        title: 'What are the average prices for services?',
+        title: 'Millised on teenuste keskmised hinnad?',
         body: <>
             <p className={styles.paragraph}>
-                The cost of outsourcing services depends on a combination of factors and is individual in each case.
-                These
-                factors include:
+                Allhanketeenuste maksumus sõltub tegurite kombinatsioonist ja on igal juhul individuaalne. Need tegurid
+                hõlmavad järgmist:
             </p>
             <ul className={styles.list} style={{marginBottom: '1rem'}}>
                 <li className={styles.listItem}>
-                    Direction of activity within which outsourcing services are provided;
+                    <span>Tegevussuund</span>, mille raames allhanketeenuseid osutatakse;
                 </li>
                 <li className={styles.listItem}>
-                    The period for which the contract is concluded (as a rule, the longer the term of the contract, the
-                    more
-                    favorable the conditions for the customer company);
+                    <span>Periood</span>, mille jooksul leping sõlmitakse (reeglina, mida pikem on lepingu tähtaeg, seda
+                    soodsamad on
+                    kliendiettevõttele tingimused);
                 </li>
                 <li className={styles.listItem}>
-                    The region in which outsourcing services will be provided;
+                    <span>piirkond</span>, kus osutatakse allhanketeenuseid;
                 </li>
                 <li className={styles.listItem}>
-                    The complexity of the work;
+                    <span>Töö</span> keerukus;
                 </li>
             </ul>
             <p>
-                and other factors.
-                In order for us to calculate the cost of services and conditions in relation to your company, contact us
-                and
-                our specialists will make a detailed calculation and select the optimal solution for you.
+                Ja muud tegurid. Selleks, et saaksime teie ettevõttega seotud teenuste maksumuse ja tingimused välja
+                arvutada, võtke meiega ühendust ning meie spetsialistid teevad detailse arvutuse ja valivad teile
+                sobivaima lahenduse.
             </p>
         </>,
         imageSrc: faqPricesImg,
         imagePosition: 'right'
     },
     {
-        title: 'If a company orders outsourcing services, who then pays taxes for employees?',
+        title: 'Kui ettevõte tellib allhanketeenuseid, kes siis maksab töötajatele makse?',
         body: <p>
-            According to the Labor Legislation of the European Union, the entire tax burden falls on the company in
-            which employees are legally registered. Accordingly, if your company orders an outsourcing service from
-            us,
-            then taxes, as well as all issues related to staff registration, fall on our shoulders. At the same
-            time, it
-            is important to understand that taxes from the wages of our employees are included in the cost of
-            services
-            under an agreement with the customer company and are paid through G-account.
+            Euroopa Liidu tööõiguse kohaselt langeb kogu maksukoormus ettevõttele, kus töötajad on seaduslikult
+            registreeritud. Seega, kui teie ettevõte tellib meilt allhanketeenuse, langevad maksud ja kõik töötajate
+            registreerimisega seotud küsimused meie õlgadele. Samas on oluline mõista, et meie töötajate palgast
+            makstavad maksud sisalduvad kliendi ettevõttega sõlmitud lepingu alusel teenuste maksumuses ja neid
+            makstakse G-konto kaudu.
         </p>,
         imageSrc: faqTaxesImg,
         imagePosition: 'left'
     },
     {
-        title: 'What contracts are concluded when outsourcing personnel?',
+        title: 'Millised lepingud sõlmitakse personali allhankel?',
         body: <ul className={styles.list}>
             <li className={styles.listItem}>
-                Direct labor lease agreement is concluded between the Customer - You and the Contractor - Us.
+                <span>Otsene</span> tööjõurendileping sõlmitakse Tellija - Teie ja Töövõtja - Meie vahel.
             </li>
             <li className={styles.listItem}>
-                Tripartite agreement is concluded between Customer - You, Contractor - Us and Intermediary/Confidanr -
-                OrganizedFlex B.V., who is our payroll agent.
+                <span>Kolmepoolne</span> leping sõlmitakse kliendi - teie, töövõtja - meie ja vahendaja / usaldusisiku -
+                OrganizedFlex B.V. vahel, kes on meie palgaarvestuse agent.
             </li>
             <li className={styles.listItem}>
-                Customer is provided with Oflex CRM system access, which reflects up-to-date information on all
-                projects,
-                leased employees, tax deductions, permits, working hours, salary slips and etc.
+                <span>Kliendile</span> antakse juurdepääs Oflex CRM-süsteemile, mis kajastab ajakohast teavet kõigi
+                projektide,
+                renditud töötajate, maksusoodustuste, lubade, töötundide, palgatõendite jms kohta
             </li>
         </ul>,
         imageSrc: faqContractsImg,

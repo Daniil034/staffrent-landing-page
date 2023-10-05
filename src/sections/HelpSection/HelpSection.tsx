@@ -5,7 +5,6 @@ import {ReactComponent as QuestionMark} from "shared/images/questionMark.svg";
 import styles from './HelpSection.module.scss';
 import {Input} from "../../shared/ui/Input/Input";
 import sendForm from "../../api";
-import {findByRole} from "@testing-library/react";
 
 type FormData = {
     name: string,
@@ -13,6 +12,14 @@ type FormData = {
     email: string,
     phone: string,
     comments: string
+}
+
+const placeholders = {
+    name: 'Nimi',
+    company: 'Ettevõte',
+    email: 'E-post',
+    phone: 'Telefon',
+    comments: 'Kommentaarid'
 }
 
 export function HelpSection() {
@@ -40,7 +47,7 @@ export function HelpSection() {
         return Object.entries(formData).map(([field, value]) => (
             <Input
                 key={field}
-                placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
+                placeholder={placeholders[field as keyof FormData]}
                 value={value}
                 required={true}
                 onChange={e => handleInputChange(field as keyof FormData, e.target.value)}
@@ -49,7 +56,7 @@ export function HelpSection() {
     }, [formData])
     return (
         <section className={styles.root}>
-            <Title className={styles.title}>Ready to help you!</Title>
+            <Title className={styles.title}>VALMIS AITAMA!</Title>
             <div className={styles.form}>
                 <QuestionMark className={styles.questionMark}/>
                 {inputs}
@@ -64,7 +71,7 @@ export function HelpSection() {
                             comments: ''
                         });
                     });
-                }}>Send</Button>
+                }}>Saatma</Button>
             </div>
         </section>
     );

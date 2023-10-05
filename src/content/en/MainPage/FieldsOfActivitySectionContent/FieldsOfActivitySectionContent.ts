@@ -1,1 +1,1 @@
-export const en_title = "Main fields of activity";
+export const en_title = "Peamised tegevusvaldkonnad";

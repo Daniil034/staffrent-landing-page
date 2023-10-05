@@ -1,26 +1,26 @@
 export const LINKS: { href: string, label: string }[] = [
     {
         href: '/',
-        label: 'Main'
+        label: 'Peamine'
     },
     {
         href: '/about',
-        label: 'About Us'
+        label: 'Meie kohta'
     },
     {
         href: '/contact-us',
-        label: 'Contact Us'
+        label: 'Võta meiega ühendust'
     },
     {
         href: '/employers',
-        label: 'Employers'
+        label: 'Tööandjale'
     },
     {
         href: '/job-seeker',
-        label: 'Jobseeker'
+        label: 'Tööotsija'
     },
     {
         href: '/faq',
-        label: 'FAQ'
+        label: 'KKK'
     }
 ]

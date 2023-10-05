@@ -33,15 +33,22 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: welderImg,
         imgAlt: 'Picture of a welder',
-        title: 'Welding job',
-        money: '28',
+        title: 'Keevitustööd',
+        money: '16',
         description: {
             position: 'MIG-MAG-TIG-MMA-Gaz-Plazma welding',
             country: 'Netherlands',
             text: <>
-                <p>MIG (Metal Inert Gas) - using inert gas. MIG machines are perfect for welding aluminum, copper, titanium products, nickel and various alloys - From 2 mm. and higher </p>
-                <p>MAG (Metal Active Gas) - using nitrogen, carbon dioxide and other gases that bind oxygen. The type of welding is used for workpieces made of low-alloy, non-alloy and corrosion-resistant steels - From 1 mm and above</p>
-                <p>TIG welding (TIG) - instead of a wire or a consumable electrode, a refractory tungsten electrode with a high melting point is used. The process takes place in a protective gas environment - argon. By itself, the electrode for argon arc welding cannot be melted. Therefore, filler material from the same metal as the workpiece can be used for the weld. In some cases, the seam is formed as a result of edge melting - From 0.5 mm and above</p>
+                <p>MIG (Metal Inert Gas) - kasutades inertset gaasi. MIG-masinad sobivad ideaalselt alumiiniumi, vase,
+                    titaantoodete, nikli ja erinevate sulamite keevitamiseks - alates 2 mm. ja rohkem</p>
+                <p>MAG (Metal Active Gas) - kasutades lämmastikku, süsinikdioksiidi ja muid hapnikku siduvaid gaase.
+                    Keevituse tüüpi kasutatakse madala legeeritud, legeerimata ja korrosioonikindlast terasest
+                    töödeldavate detailide jaoks - alates 1 mm ja rohkemTIG-keevitus (TIG) - traadi või tarbitava
+                    elektroodi asemel kasutatakse kõrge sulamistemperatuuriga tulekindlat volframelektroodi. Protsess
+                    toimub kaitsvas gaasikeskkonnas - argoonis</p>
+                <p>Argoonkaarkeevituse elektroodi ei saa iseenesest sulatada. Seetõttu võib keevitamiseks kasutada
+                    toorikuga samast metallist täitematerjali. Mõnel juhul moodustub õmblus serva sulamise tulemusena -
+                    alates 0, 5 mm ja rohkem</p>
             </>,
             images: [
                 welding1Img,
@@ -56,15 +63,23 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: laserImg,
         imgAlt: 'Cutting laser picture',
-        title: 'CNC 2D & 3D FLAT LASER cutting servises',
-        money: '34',
+        title: 'CNC 2D ja 3D LAMELASERLÕIKAMISE TEENUSED',
+        money: '15',
         description: {
             position: 'cnc operators',
             country: 'NL',
             text: <>
-                <p>3D laser cutting services provide unlimited potential for metal fabrication. With precision and speed, 3D lasers can cut a wide variety of features in tubes, channels, angles and beams. You benefit from the combination of the latest laser tube cutting machines, technology and skilled craftsmanship for a streamlined process that lowers costs, speeds up cycle times and expands design capabilities. </p>
-                <p>STAFFRENT as a leading provider of tube laser cutting specialists in Baltic region and throughout the Eastern Europe, we’re able to handle your complete range of needs. Whether you’re developing a prototype or require high-volume production, our experienced team will work with you to provide the most cost-effective and efficient 3D laser cutting services. Our specialists successfully produced precision-cut parts, components, weldments and assemblies for industries such as automotive, agriculture, energy, heavy equipment, hardware, fabrication and many others.</p>
-            </> ,
+                <p>3D laserlõikamisteenused pakuvad piiramatut potentsiaali metalli valmistamiseks. Täpsuse ja kiirusega
+                    suudavad 3D-laserid lõigata torudes, kanalites, nurkades ja talades mitmesuguseid funktsioone. Saate
+                    kasu uusimate lasertorude lõikamismasinate, tehnoloogia ja oskusliku meisterlikkuse kombinatsioonist
+                    sujuva protsessi jaoks, mis vähendab kulusid, kiirendab tsükliaegu ja laiendab disainivõimalusi.</p>
+                <p>STAFFRENT kui juhtiv torude laserlõikamise spetsialistide pakkuja Balti regioonis ja kogu
+                    Ida-Euroopas suudame toime tulla kõigi teie vajadustega. Olenemata sellest, kas töötate välja
+                    prototüüpi või vajate suuremahulist tootmist, teeb meie kogenud meeskond teiega koostööd, et pakkuda
+                    kõige kulutõhusamaid ja tõhusamaid 3D-laserlõikamisteenuseid. Meie spetsialistid tootsid edukalt
+                    täppislõigatud osi, komponente, keevisõmblusi ja komplekte sellistele tööstusharudele nagu
+                    autotööstus, põllumajandus, energeetika, rasketehnika, riistvara, tootmine ja paljud teised</p>
+            </>,
             images: [
                 cnc2d1Img,
                 cnc2d2Img,
@@ -78,16 +93,25 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: bendedMetalImg,
         imgAlt: "Picture of bended metal",
-        title: 'CNC bending and forming',
-        money: '36',
+        title: 'CNC painutamine ja vormimine',
+        money: '16',
         description: {
             position: 'Bending and forming specialists',
             country: 'NL',
             text: <>
-                <p>At STAFFRENT, we take pride in our ability to meet our customers’ needs across a wide range of outstaffing services in Metal and Steel sectors. That’s why we offer metal bending and metal forming specialists that are strongly experienced in use of CNC hydraulic press brakes, comprehensive tooling and full CAD/CAM capabilities in the Your facility where STAFFRENT specialists able to make complex machining, welding, laser cutting and more works.</p>
-                <p>Our CNC bending and forming specialists can accommodate everything from the simplest to the most complex bends on your fabrication project.</p>
-                <p>STAFFRENT can provide metal bending specialists for a wide range of industries, including automotive, recreational vehicles and more. Regardless of your industry, we’ll always meet your expectations regarding quality, service and on-time specialist delivery — that’s been the core of our operating philosophy since we first opened for business in 2013.</p>
-            </> ,
+                <p>STAFFRENTis oleme uhked oma võime üle rahuldada oma klientide vajadusi mitmesuguste metalli- ja
+                    terasesektori personaliteenuste osas. Sellepärast pakume metalli painutus- ja vormimisspetsialiste,
+                    kellel on suured kogemused CNC hüdrauliliste presspidurite kasutamisel, terviklikke tööriistu ja
+                    täielikke CAD/CAM-i võimalusi teie rajatises, kus STAFFRENT spetsialistid suudavad teha keerukaid
+                    töötlus-, keevitus-, laserlõikamis- ja muid töid.Meie CNC painutus- ja vormimisspetsialistid
+                    mahutavad teie valmistamisprojektis kõike alates kõige lihtsamatest kuni kõige keerukamate
+                    painutusteni.</p>
+                <p>STAFFRENT võib pakkuda metalli painutamise spetsialiste paljudele tööstusharudele, sealhulgas
+                    autotööstusele, vabaajasõidukitele ja muule.</p>
+                <p>Sõltumata teie tööstusharust vastame alati teie ootustele kvaliteedi, teeninduse ja õigeaegse
+                    spetsialistide kohaletoimetamise osas - see on olnud meie tegevusfilosoofia tuum alates sellest, kui
+                    me 2013. aastal esimest korda äritegevuseks avasime.</p>
+            </>,
             images: [
                 cncBending1,
                 cncBending2,
@@ -101,12 +125,17 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: constructorImg,
         imgAlt: "Picture of a constructor worker",
-        title: 'Assembly of steel structures',
-        money: '30',
+        title: 'Teraskonstruktsioonide kokkupanek',
+        money: '15',
         description: {
             position: 'Erectors and Assemblers',
             country: 'NL',
-            text: <p>STAFFRENT steel structure erection team is made up of highly qualified technicians, trainded by the company itself, who have the maximum experiencia and expertise in this type of activity. Our professionals are qualified to undertake any steel structure assembly job with the highest degree of satisfaction. Specialist possess with VCA, IPAF, VVL, SCC certificates. At each stage of the assembly process we control the strict compliance of each established safety measure, as well as the use of each of the individual and collective protection equipment, according to current regulations.</p> ,
+            text: <p>STAFFRENT teraskonstruktsioonide püstitamise meeskond koosneb kõrgelt kvalifitseeritud tehnikutest,
+                keda koolitab ettevõte ise ja kellel on seda tüüpi tegevuses maksimaalne kogemus ja asjatundlikkus. Meie
+                spetsialistid on kvalifitseeritud tegema mis tahes teraskonstruktsioonide montaažitööd suurima
+                rahulolugaSpetsialistil on VCA, IPAF, VVL, SCC sertifikaadid.
+                Montaažiprotsessi igas etapis kontrollime iga kehtestatud ohutusmeetme ranget järgimist, samuti iga
+                individuaalse ja kollektiivse kaitsevahendi kasutamist vastavalt kehtivatele eeskirjadele.</p>,
             images: [
                 assembly1,
                 assembly2,
@@ -120,20 +149,29 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: carpenterImg,
         imgAlt: "Picture of carpenters",
-        title: 'Carpentry and masonry works',
-        money: '28',
+        title: 'Puusepa- ja müüritööd',
+        money: '13',
         description: {
             position: 'Carpenters & Bricklayers',
             country: 'NL',
             text: <>
-                <p>STAFFRENT have over 100 experienced specialists in the construction industry, including assebly works of prefabricated houses. Our team is dedicated to providing quality work and customer service, as well as organizational skills that allow us to perform all tasks efficiently while maintaining high standards of professionalism.</p>
-                <p>The carpenter and masonry specialists are involved for the installation, repair, maintenance and replacement of woodwork in a variety of building types. Specialists have strong attention to detail with excellent customer service skills as well as proficiency with hand tools and other materials used in construction work. </p>
-                <p>STAFFRENT carpenter and masonry specialists: </p>
+                <p>STAFFRENTil on üle 100 kogenud ehitusvaldkonna spetsialisti, sealhulgas elementmajade ehitustööd.
+                    Meie meeskond on pühendunud kvaliteetse töö ja klienditeeninduse pakkumisele, samuti
+                    organisatsioonilistele oskustele, mis võimaldavad meil kõiki ülesandeid tõhusalt täita, säilitades
+                    samal ajal kõrged professionaalsuse standardid.</p>
+                <p>Puusepa- ja müüritise spetsialistid on kaasatud mitmesuguste hoonetüüpide puidutööde paigaldamisele,
+                    remondile, hooldusele ja asendamisele. Spetsialistidel on suur tähelepanu detailidele, millel on
+                    suurepärased klienditeenindusoskused ning käsitööriistade ja muude ehitustöödel kasutatavate
+                    materjalide tundmine</p>
+                <p>STAFFRENT puusepa- ja müüritööde spetsialistid:</p>
                 <ul>
-                    <li>Perform all carpentry and masonry work in accordance with client standards.</li>
-                    <li>Provide quality workmanship on projects, including installing woodwork, installing doors, building walls, painting interior windows.</li>
-                    <li>Adhere to safety rules and regulations when performing job duties.</li>
-                    <li>Able to work in all weather conditions -. Possess medical insurance.</li>
+                    <li>Tehke kõik puusepa- ja müüritööd vastavalt kliendi standarditele.</li>
+                    <li>Pakkuge kvaliteetset tööd projektides, sealhulgas puidutööde paigaldamine, uste paigaldamine,
+                        seinte ehitamine, siseakende värvimine.
+                    </li>
+                    <li>Järgige tööülesannete täitmisel ohutuseeskirju ja -eeskirju.</li>
+                    <li>Oskab töötada kõikidel ilmastikutingimustel.</li>
+                    <li>Omada tervisekindlustust.</li>
                 </ul>
             </>,
             images: [
@@ -149,22 +187,33 @@ export const ACTIVITY_LIST: ActivityList = [
     {
         imgSrc: warehouseWorkerImg,
         imgAlt: "Picture of a warehouse worker",
-        title: 'Warehouse workers',
-        money: '22',
+        title: 'Laotöötajad',
+        money: '11,5',
         description: {
 
-            position: 'In and Outside',
+            position: '',
             country: 'NL',
             text: <>
-                <p>Cargo processing, order picking, stickering, marking, packaging, all these works require certain knowledge and skills. If these works are performed by unskilled warehouse personnel, then this will certainly affect the speed of the sale of goods and the volume of your sales. This is all the more relevant if you are selling perishable goods or the product is being sold as part of a promotion. In any case, you should be interested in the fact that the work in your company is performed by qualified warehouse personnel.</p>
-                <p>If you become a client of the STAFFRENT company, you will not have to overcome such difficulties. We employ only highly qualified specialists. The warehouse staff of our company is able to assist in carrying out warehouse work of any level of complexity, including the packaging of goods, their packaging and preparation for sale.</p>
-                <p>We offer:</p>
+                <p>Lasti töötlemine, tellimuste komplekteerimine, kleebimine, märgistamine, pakendamine, kõik need tööd
+                    nõuavad teatud teadmisi ja oskusi. Kui neid töid teostavad kvalifitseerimata laotöötajad, mõjutab
+                    see kindlasti kaupade müügi kiirust ja müügimahtu.
+
+                    See on veelgi asjakohasem, kui müüte kiiresti riknevaid kaupu või kui toodet müüakse kampaania
+                    osana. Igal juhul peaksite olema huvitatud asjaolust, et teie ettevõttes teeb tööd kvalifitseeritud
+                    laopersonal.</p>
+                <p>On
+
+                    Kui saate ettevõtte STAFFRENT kliendiks, ei pea te selliseid raskusi ületama. Meil töötavad ainult
+                    kõrgelt kvalifitseeritud spetsialistid. Meie ettevõtte laotöötajad on võimelised abistama igasuguse
+                    keerukusega laotööde teostamisel, sealhulgas kaupade pakendamisel, pakendamisel ja müügiks
+                    ettevalmistamisel. </p>
+                <p>Pakume:</p>
                 <ul>
                     <li>Packers</li>
-                    <li>Drivers of forklifts and other lifting machines</li>
-                    <li>Quality control specialists</li>
-                    <li>Movers</li>
-                    <li>Sticker and Markers</li>
+                    <li>Kahveltõstukite ja muude tõsteseadmete juhid</li>
+                    <li>Kvaliteedikontrolli spetsialistid</li>
+                    <li>Liikunud</li>
+                    <li>Kleebis ja markerid</li>
                 </ul>
             </>,
             images: [

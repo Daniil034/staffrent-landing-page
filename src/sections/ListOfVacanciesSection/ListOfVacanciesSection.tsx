@@ -6,7 +6,6 @@ import {Container} from "../../shared/ui/Container/Container";
 import {ChangeEvent, FormEvent, useReducer, useState} from "react";
 import {Input} from "../../shared/ui/Input/Input";
 import {Button} from "../../shared/ui/Button/Button";
-import classNames from "classnames";
 import {defaultFormSelectorValue, formReducer, FormState, initialFormState, InputFields} from "./reducer";
 import sendForm from "../../api";
 
@@ -30,10 +29,10 @@ export function ListOfVacanciesSection() {
     }
 
     const placeholders: Record<keyof FormState, string> = {
-        name: 'Name',
-        phone: 'Phone',
-        surname: 'Surname',
-        email: 'Email',
+        name: 'Eesnimi',
+        phone: 'Telefon',
+        surname: 'Perekonnanimi',
+        email: 'E-posti'
     }
     const areAllFieldsFilled = () => {
         return Object.values(formData).every(value => value !== '');
@@ -62,7 +61,7 @@ export function ListOfVacanciesSection() {
                     ))}
                 </ul>
                 <div className={styles.cv}>
-                    <Title className={styles.cvTitle} color="dark">Send your cv</Title>
+                    <Title className={styles.cvTitle} color="dark">ESITAGE OMA CV</Title>
                     <form onSubmit={handleSubmit}>
                         <div className={styles.cvInputs}>
                             {Object.entries(formData).map(([field, value]) => {
@@ -86,7 +85,7 @@ export function ListOfVacanciesSection() {
                             sendForm("CV", formData).then(() => {
                                 setSendButtonDisabled(true);
                             });
-                        }}>Send</Button>
+                        }}>Saatma</Button>
                     </form>
                 </div>
             </Container>

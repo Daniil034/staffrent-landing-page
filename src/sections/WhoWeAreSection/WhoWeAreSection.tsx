@@ -11,7 +11,7 @@ import {
     en_second_title,
     en_staffrent,
     en_third_paragraph,
-    en_title,
+    en_title, third_opportunity
 } from "../../content/en/AboutUsPage/WhoWeAreSectionContent";
 
 export function WhoWeAreSection() {
@@ -25,7 +25,7 @@ export function WhoWeAreSection() {
                 </div>
                 <div className={styles.content}>
                     <p>
-                        <span className={styles.staffrent}>{en_staffrent}</span>{en_first_paragraph}
+                        <span className={styles.staffrent}>{en_staffrent}</span> {en_first_paragraph}
                     </p>
                     <p>
                         {en_second_paragraph}
@@ -34,7 +34,7 @@ export function WhoWeAreSection() {
                         {en_third_paragraph}
                     </p>
                     <p>
-                        <span className={styles.staffrent}>{en_staffrent}</span>{en_second_title}
+                        <span className={styles.staffrent}>{en_staffrent}</span> {en_second_title}
                         <ul className={styles.list}>
                             <li>
                                 {en_first_opportunity}
@@ -42,7 +42,7 @@ export function WhoWeAreSection() {
                             <li>
                                 {en_second_opportunity}
                             </li>
-                            <li>Reduce payroll obligations.</li>
+                            <li>{third_opportunity}</li>
                         </ul>
                     </p>
                     <p>

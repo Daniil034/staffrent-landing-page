@@ -51,7 +51,7 @@ export function ActivityPage() {
         slidesToScroll: 1,
         lazyLoad: "ondemand",
         nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
+        prevArrow: <PrevArrow/>
     };
 
     const handleImageClick = (index: number) => setModalImageIndex(index);
@@ -61,9 +61,8 @@ export function ActivityPage() {
     return (
         <main>
             <Container>
-                {/*<div>*/}
                 <Title align="left">{title}</Title>
-                <p className={styles.position}>{description.position}</p>
+                {/*<p className={styles.position}>{description.position}</p>*/}
                 <table className={styles.table}>
                     <tr>
                         <td>1 hr</td>
@@ -71,9 +70,8 @@ export function ActivityPage() {
                         <td>{description.country}</td>
                     </tr>
                 </table>
-                <p className={styles.descriptionTitle}>Service Description</p>
+                <p className={styles.descriptionTitle}>Teenuse kirjeldus</p>
                 <div className={styles.description}>{description.text}</div>
-                {/*</div>*/}
                 <div className={styles.carousel}>
                     <Slider {...settings}>
                         {description.images.map((imageSrc, index) => <img onClick={() => handleImageClick(index)}

@@ -11,17 +11,17 @@ export function FaqHeader() {
                     <div className={styles.image}/>
                 </div>
                 <div className={styles.textContent}>
-                    <Title>FAQ - develop together with us!</Title>
-                    <p className={styles.subtitle}>How outsourcing works?</p>
+                    <Title>KKK - arendage koos meiega!</Title>
+                    <p className={styles.subtitle}>Kuidas allhanked toimivad?</p>
                     <ul className={styles.list}>
-                        <li>We select high-quality staff from existing employees or from our database, in order to carry
-                            out the set of business tasks
+                        <li>Valime kvaliteetsed töötajad olemasolevate töötajate seast või oma andmebaasist, et täita
+                            äriülesannete komplekti
                         </li>
-                        <li>A responsible manager is assigned to your project, who fully oversees the work of the staff
-                            according to the specified criteria
+                        <li>Teie projektile määratakse vastutav juht, kes jälgib täielikult personali tööd vastavalt
+                            kindlaksmääratud kriteeriumidele
                         </li>
-                        <li>We take care of all the issues concerning staff registration, salary payments, tax
-                            deductions and substitution. You get a ready business solution in a given time.
+                        <li>Me hoolitseme kõigi küsimuste eest, mis puudutavad töötajate registreerimist, palgamakseid,
+                            maksusoodustusi ja asendamist. Saate etteantud aja jooksul valmis ärilahenduse.
                         </li>
                     </ul>
                 </div>

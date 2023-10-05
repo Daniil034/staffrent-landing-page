@@ -7,17 +7,17 @@ import arturPatsanjuk from 'shared/images/arturPatsanjuk2.png'
 export const TEAM_LIST: TeamMemberProps[] = [
     {
         imageSrc: alexandrPashkevitch,
-        name: 'Alexandr Pashkevitch',
-        position: 'Founder'
+        name: 'Aleksandrs Paškevičs',
+        position: 'Ceo'
     },
     {
         imageSrc: antonKazmin,
-        name: 'Anton Kazmin',
-        position: 'Managing director'
+        name: 'Antons Kazmins',
+        position: 'Tegevdirektor'
     },
     {
         imageSrc: arturPatsanjuk,
-        name: 'Artur Patsanjuk',
-        position: 'Counselor'
+        name: 'Artūrs Pacanjūks',
+        position: 'Tegevjuht'
     }
 ]

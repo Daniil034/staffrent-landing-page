@@ -5,9 +5,7 @@ import styles from './MainHeroSection.module.scss';
 import {Title} from "../../shared/ui/Title/Title";
 import {en_description, en_imageParagraph, en_top} from "../../content/en/MainPage/MainHeroSectionContent";
 
-type Props = {};
-
-export function MainHeroSection(props: Props) {
+export function MainHeroSection() {
     return (
         <section className={styles.root}>
             <Container>

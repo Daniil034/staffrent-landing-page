@@ -1,2 +1,2 @@
-export const en_title = 'OUR TEAM MEMBERS';
-export const en_meet = 'Meet our team';
+export const en_title = 'MEIE MEESKONNALIIKMED';
+export const en_meet = 'Tutvu meie meeskonnaga';

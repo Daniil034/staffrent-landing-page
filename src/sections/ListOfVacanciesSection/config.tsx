@@ -5,92 +5,92 @@ import solarTechnicianImg from 'shared/images/solarTechnicianImage.png'
 
 export const VACANCY_LIST: VacancyItemProps[] = [
     {
-        title: 'Fitter - Erector For Production Warehouse',
+        title: 'A Paigaldaja - Tootmislao püstitaja',
         imageSrc: locksmithImg,
         imagePosition: 'right',
         imageMarginRight: -6,
         imageMarginLeft: -6,
         bulletPoints: [
             {
-                bulletPointTitle: 'Responsibilities:',
+                bulletPointTitle: 'Kohustused:',
                 bulletPointBody: <>
-                    - Performing locksmith work on the manufacture and installation of metal structures;<br/>
-                    - Performing work with hand tools;<br/>
-                    - Material preparation (cutting and cleaning of metal);<br/>
-                    - Assembly of metal products (sheet, pipe, wire);<br/>
-                    - Assembly of metal structures;<br/>
-                    - Welding works.
+                    - <span>Metallkonstruktsioonide</span> valmistamise ja paigaldamise lukksepatööde teostamine;<br/>
+                    - <span>Töö</span> tegemine käsitööriistadega;<br/>
+                    - <span>materjali</span> ettevalmistamine (metalli lõikamine ja puhastamine);<br/>
+                    - <span>metalltoodete</span> (leht, toru, traat) kokkupanek;<br/>
+                    - <span>metallkonstruktsioonide</span> kokkupanek;<br/>
+                    - <span>Keevitustööd</span>.
                 </>
             },
             {
-                bulletPointTitle: 'Requirements:',
+                bulletPointTitle: 'Nõuded:',
                 bulletPointBody: <>
-                    - At least 3 years experience in locksmithing;<br/>
-                    - Reading blueprints;<br/>
-                    - Skills and experience with power tools;<br/>
-                    - Secondary specialized technical education - desirable;<br/>
-                    - Experience in a manufacturing environment - desirable;<br/>
-                    - Integrity, discipline, diligence.
+                    - <span>Vähemalt</span> 3-aastane kogemus lukksepatöös;<br/>
+                    - <span>jooniste</span> lugemine;<br/>
+                    - <span>Oskused</span> ja kogemused elektritööriistadega;<br/>
+                    - <span>keskharidusega</span> tehniline haridus - soovitav;<br/>
+                    - <span>Kogemus</span> tootmiskeskkonnas - soovitav;<br/>
+                    - <span>Ausus</span>, distsipliin, töökus.
                 </>
             },
             {
-                bulletPointTitle: 'Conditions:',
+                bulletPointTitle: 'Tingimused:',
                 bulletPointBody: <>
-                    - Official registration;<br/>
-                    - Work clothes and hand tools are provided;<br/>
-                    - Daily work schedule (5/2);<br/>
-                    - Stable salary and the possibility of advances;<br/>
-                    - Good working conditions and constant support of the curator;<br/>
-                    - Housing and transport provided;<br/>
-                    - Assistance with the preparation of all documents.
+                    - <span>ametlik</span> registreerimine;<br/>
+                    - <span>Olemas</span> on tööriided ja käsitööriistad;<br/>
+                    - <span>Igapäevane</span> töögraafik (5/2);<br/>
+                    - <span>stabiilne</span> palk ja ettemaksete võimalus;<br/>
+                    - <span>Head</span> töötingimused ja kuraatori pidev toetus;<br/>
+                    - <span>Pakutakse</span> majutust ja transporti;<br/>
+                    - <span>Abi</span> kõigi dokumentide ettevalmistamisel.
                 </>
             }
         ]
     },
     {
-        title: 'Technician / Hydraulics specialist',
+        title: 'Ökonik/Hüdraulika spetsialist',
         imageSrc: technicianImg,
         imagePosition: 'left',
         imageMarginLeft: -7,
         imageMarginRight: -6,
         bulletPoints: [
             {
-                bulletPointTitle: 'Job description:',
+                bulletPointTitle: 'Töö kirjeldus:',
                 bulletPointBody: <>
-                    - repair and maintenance of hydraulic equipment and units<br/>
-                    - hydraulic piping installation<br/>
-                    - making hydraulic hoses<br/>
-                    - repair of hydraulic cylinders<br/>
-                    - creation and implementation of hydraulic solutions
+                    - <span>hüdraulikaseadmete</span> ja -seadmete remont ja hooldus<br/>
+                    - <span>Hüdraulilise</span> torustiku paigaldus<br/>
+                    - <span>Hüdraulikavoolikute</span> valmistamine<br/>
+                    - <span>hüdrosilindrite</span> remont<br/>
+                    - <span>hüdrauliliste</span> lahenduste loomine ja rakendamine
                 </>
             },
             {
-                bulletPointTitle: 'Expectations for the candidate:',
+                bulletPointTitle: 'Ootused kandidaadile:',
                 bulletPointBody: <>
-                    - previous contact with technical maintenance and repair work<br/>
-                    - at least category B driver's license<br/>
-                    - accuracy and sense of duty<br/>
-                    - the will to learn and improve oneself<br/>
-                    - English language skills<br/>
-                    - knowledge and skills in hydraulics, mechanics and electricity will be useful
+                    - <span>eelnev</span> kokkupuude tehniliste hooldus- ja remonditöödega<br/>
+                    - <span>vähemalt</span> B-kategooria juhiluba<br/>
+                    - <span>täpsus</span> ja kohusetunne<br/>
+                    - <span>tahe</span> õppida ja ennast täiendada<br/>
+                    - <span>Inglise</span> keele oskus<br/>
+                    - <span>kasulikud</span> on teadmised ja oskused hüdraulika, mehaanika ja elektri valdkonnas
                 </>
             },
             {
-                bulletPointTitle: 'Conditions:',
+                bulletPointTitle: 'Tingimused:',
                 bulletPointBody: <>
-                    - Official registration;<br/>
-                    - Work clothes and hand tools are provided;<br/>
-                    - Daily work schedule (5/2);<br/>
-                    - Stable salary and the possibility of advances;<br/>
-                    - Good working conditions and constant support of the curator;<br/>
-                    - Housing and transport provided;<br/>
-                    - Assistance with the preparation of all documents.
+                    - <span>ametlik</span> registreerimine;<br/>
+                    - <span>Olemas</span> on tööriided ja käsitööriistad;<br/>
+                    - <span>Igapäevane</span> töögraafik (5/2);<br/>
+                    - <span>stabiilne</span> palk ja ettemaksete võimalus;<br/>
+                    - <span>Head</span> töötingimused ja kuraatori pidev toetus;<br/>
+                    - <span>Pakutakse</span> majutust ja transporti;<br/>
+                    - <span>Abi</span> kõigi dokumentide koostamisel.
                 </>
             }
         ]
     },
     {
-        title: 'Solar panels technician',
+        title: 'Päikesepaneelide tehnik',
         imageSrc: solarTechnicianImg,
         imageMarginRight: -8,
         imageMarginLeft: -6,
@@ -99,33 +99,35 @@ export const VACANCY_LIST: VacancyItemProps[] = [
             {
                 bulletPointTitle: '',
                 bulletPointBody: `
-                    The Inspection Technician is responsible for scheduling, performing and recording all required inspections for installed projects. You will be walking through with the assigned inspectors ensuring that the solar system is installed properly and in compliance with all regulations! This position will also require you to make any minor repairs in order to attain approval!
+                    Inspekteerimistehnik vastutab installitud projektide kõigi vajalike kontrollide ajastamise, läbiviimise ja salvestamise eest. Te kõnnite koos määratud inspektoritega läbi, tagades, et päikesesüsteem on õigesti paigaldatud ja kooskõlas kõigi eeskirjadega! See ametikoht nõuab heakskiidu saamiseks ka väikeste remonditööde tegemist!
                 `
             },
             {
-                bulletPointTitle: 'Job description:',
+                bulletPointTitle: 'Töö kirjeldus:',
                 bulletPointBody: <>
-                    - Perform solar, electrical, or building inspections as scheduled<br/>
-                    - Coordinate inspections with customers and jurisdictions<br/>
-                    - Maintain an organized and efficient calendar<br/>
-                    - Build a positive and lasting customer experience, discussing project timelines post inspection
-                    signoff, detailing and communicating concerns internally<br/>
-                    - Use software systems to record, maintain and update project specific deliverables and tasks<br/>
-                    - Potentially need to complete minor tasks such as painting conduit, applying NEC stickers/placards,
+                    - Teostage plaanipäraselt päikese-, elektri- või ehitusülevaatusi<br/>
+                    - Koordineerida kontrolle klientide ja jurisdiktsioonidega<br/>
+                    - Korrastatud ja tõhusa kalendri pidamine<br/>
+                    - Looge positiivne ja püsiv kliendikogemus, arutades projekti ajakavasid pärast ülevaatuse
+                    allkirjastamist, täpsustades ja edastades muresid sisemiselt<br/>
+                    - Kasutage tarkvarasüsteeme projektipõhiste tulemuste ja ülesannete salvestamiseks, haldamiseks ja
+                    värskendamiseks<br/>
+                    - Potentsiaalselt on vaja täita väiksemaid ülesandeid, nagu kanali värvimine, NEC kleebiste /
+                    plakatite rakendamine jne,
                     etc.
                 </>
             },
             {
-                bulletPointTitle: 'Expectations for the candidate:',
+                bulletPointTitle: 'Ootused kandidaadile:',
                 bulletPointBody: <>
-                    - Solar installation or Solar electrical experience is preferred<br/>
-                    - An individual who possess a valid driver’s license and maintain a clean driving record<br/>
-                    - Adhere to company safety policies and procedures<br/>
-                    - Must have excellent organizational and time-management skills<br/>
-                    - Strong communication skills in order to offer exceptional customer service and interact with
-                    customers and inspectors in a professional and courteous manner<br/>
-                    - Must be comfortable working at heights<br/>
-                    - Electrical experience (3+ year)
+                    - Eelistatud on päikesepaigaldis või päikeseelektri kogemus<br/>
+                    - Isik, kellel on kehtiv juhiluba ja kes peab puhast sõiduarvestust<br/>
+                    - Järgige ettevõtte ohutuseeskirju ja -protseduure<br/>
+                    - Peab omama suurepäraseid organiseerimis- ja ajajuhtimisoskusi<br/>
+                    - Tugev suhtlemisoskus, et pakkuda erakordset klienditeenindust ning suhelda klientide ja
+                    inspektoritega professionaalselt ja viisakalt<br/>
+                    - Peab olema mugav töötada kõrgustes<br/>
+                    - Elektrikogemus (3+ aastat)
                 </>
             }
         ]

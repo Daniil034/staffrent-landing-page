@@ -12,12 +12,12 @@ export function ContactDetailsSection() {
                 <ContactDetailsLine className={styles.contactDetailsLine}/>
                 <div className={styles.containerBg}>
                     <div className={styles.details}>
-                        <Title className={styles.title}>CONTACT DETAILS</Title>
+                        <Title className={styles.title}>KONTAKTANDMED</Title>
                         <div className={styles.body}>
                             <p>
-                                <span className={styles.strong}>STAFFRENT UAB</span>
+                                <span className={styles.strong}>STAFFRENT OÜ</span>
                                 <br/>
-                                <span className={styles.strong}>STAFFRENT SIA</span>
+                                <span className={styles.strong}>STAFFRENT OÜ</span>
                             </p>
                             <p>
                                 <span className={styles.strong}>KvK</span> 91125170
@@ -37,8 +37,8 @@ export function ContactDetailsSection() {
                         <div className={styles.address}>
                             <div className={styles.addressBlockItem}>
                                 <h3 className={styles.addressBlockTitle}>Address</h3>
-                                <p className={styles.addressBlockBody}>Netherlands, Oude <br/>
-                                    Trambaan 50, 2265 <br/>
+                                <p className={styles.addressBlockBody}>Estonia pst 5a,<br/>
+                                    10143 Tallinn<br/>
                                     DA in Leidschendam</p>
                             </div>
                             <div className={styles.addressBlockItem}>
@@ -50,11 +50,11 @@ export function ContactDetailsSection() {
                                 </p>
                             </div>
                             <div className={styles.addressBlockItem}>
-                                <h3 className={styles.addressBlockTitle}>Opening hours</h3>
+                                <h3 className={styles.addressBlockTitle}>Lahtiolekuajad</h3>
                                 <p className={styles.addressBlockBody}>
-                                    Mon–Fri <br/>
+                                    E-R<br/>
                                     09:00–20:00 <br/>
-                                    Sat–Sun <br/>
+                                    L–P<br/>
                                     11:00–17:00 <br/>
                                 </p>
                             </div>

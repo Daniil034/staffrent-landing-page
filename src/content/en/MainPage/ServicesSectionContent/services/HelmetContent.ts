@@ -1,2 +1,2 @@
-export const helmet_title = "Certification";
-export const helmet_description = "We have all the necessary certificates, and we work in accordance with laws and regulations of The Netherlands. For staff accommodation, we have obtained the NEN4400-1 certificate.Safety first! According to the general norms, employees undergo a labor safety courses and obtain with VCA, DPI, IPAF, 017 SCC or 018 SCC, VVL and other required certificates";
+export const helmet_title = "Sertifitseerimine";
+export const helmet_description = "Meil on olemas kõik vajalikud sertifikaadid ja me töötame vastavalt Hollandi seadustele ja määrustele. Töötajate majutamiseks oleme saanud NEN4400-1 sertifikaadi. Ohutus ennekõike! Vastavalt üldnormidele läbivad töötajad tööohutuse kursused ja saavad VCA, DPI, IPAF, 017 SCC või 018 SCC, VVL ja muude nõutavate sertifikaatidega.";
