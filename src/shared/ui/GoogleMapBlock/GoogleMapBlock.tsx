@@ -1,16 +1,16 @@
-import {GoogleMap, Marker, useLoadScript} from "@react-google-maps/api";
-import {useMemo} from "react";
+import {GoogleMap, Marker, useJsApiLoader} from "@react-google-maps/api";
 import styles from "./GoogleMap.module.scss";
 
-type Props = {};
+const center = {lat: 52.083050, lng: 4.394150};
 
-export function GoogleMapBlock(props: Props) {
+export function GoogleMapBlock() {
 
-    const {isLoaded} = useLoadScript({
+    const {isLoaded} = useJsApiLoader({
+        id: 'google-map-script',
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY!
     });
 
-    const center = useMemo(() => ({lat: 52.083050, lng: 4.394150}), []);
+    console.log(isLoaded);
 
     if (!isLoaded) {
         return null;
